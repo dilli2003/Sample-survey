@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Survey</title>
+    <style>
+         body{
+            background-image : url(img-1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .header{
+            margin-left: 100px;
+        }
+
+        .header-left{
+            float: left;
+        }
+
+        .header-right{
+            float:right;
+        }
+       
+        .container{
+            margin : 100px ;
+            padding: 30px;
+            background-color: azure;
+            border-radius: 20px;
+        }
+        .threediv {
+            display: flex;
+            height: 100%;
+        }
+        .div {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid #ccc; */
+            box-sizing: border-box;
+        }
+        .h1{
+            font-size: 100px;
+            font-family: fantasy;
+            margin-bottom: 2px;
+            color: white;
+        }
+        .h2{
+            font-size: 60px;
+            font-family: fantasy;
+            margin-top: 2px;
+            color: white;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px ;
+        }
+
+        .input {
+            padding: 8px;
+            width: 350px;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: azure;
+        }
+        
+        h3{
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-item {
+            flex: 1 1 33.3333%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .textarea {
+            width: 90%;
+            height: 100px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-top: 2px solid black ;
+        }
+        .footer-col {
+            flex: 1;
+            padding: 0 10px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .space{
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="h1">SURVEY</h1>
+        <h2 class="h2"> FORM TEMPLATE</h2>
+    </div>
+    <div class="container">
+        <div class="space">
+            <h3 >CLIENT INFORMATION :</h3>
+            <form>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="fname">First Name :</label>
+                        <input class="input" type="text" id="fname" name="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name :</label>
+                        <input class="input" type="text" id="lname" name="lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title :</label>
+                        <input class="input" type="text" id="title" name="title">
+                    </div>
+                    
+                </div>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="phone">Phone :</label>
+                        <input  class="input" type="text" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail :</label>
+                        <input class="input" type="text" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="dept">Department :</label>
+                        <input class="input" type="text" id="dept" name="dept">
+                    </div>
+                    
+                </div>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="CName">Company Name :</label>
+                        <input class="input" type="text" id="CName" name="CName">
+                    </div>
+                    <div class="form-group">
+                        <label for="Ind">Industry:</label>
+                        <input class="input" type="text" id="Ind" name="Ind">
+                    </div>
+                    <div class="form-group">
+                        <label for="CSite">Company Site :</label>
+                        <input class="input" type="text" id="CSite" name="CSite">
+                    </div>
+                    
+                </div>
+              </form>
+
+        </div>
+
+       <div class="space">
+        <h3>WHICH OUR SERVICES ARE YOU INTERESTED IN ?</h3>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <label>
+                    <input type="checkbox" name="option1"> Identity Design
+                </label>
+            </div>
+            <div class="checkbox-item">
+                <label>
+                    <input type="checkbox" name="option2"> Social Media Design
+                </label>
+            </div>
+            <div class="checkbox-item">
+                <label>
+                    <input type="checkbox" name="option3"> Logo Design
+                </label>
+            </div>
+            <div class="checkbox-item">
+                <label>
+                    <input type="checkbox" name="option4"> Website Development
+                </label>
+            </div>
+            <div class="checkbox-item">
+                <label>
+                    <input type="checkbox" name="option5"> Deigital Marketing
+                </label>
+            </div>
+            <div class="checkbox-item">
+                <label>
+                    <input type="checkbox" name="option6"> Design Guidelines
+                </label>
+            </div>
+        </div>
+        <label for="goals"><H5>What are the goals you would like us to help?</H5></label>
+                <textarea  class="textarea" id="goals" name="goals"></textarea>
+        </div>
+
+        <div >
+            <H3>HOW DID YOU HEAR ABOUT US ?</H3>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <label>
+                        <input type="checkbox" name="option1"> Print Advertising
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <label>
+                        <input type="checkbox" name="option2"> Direct Mail
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <label>
+                        <input type="checkbox" name="option3"> Online Advertising
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <label>
+                        <input type="checkbox" name="option4"> Sales Call
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <label>
+                        <input type="checkbox" name="option5"> Referral
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <label>
+                        <input type="checkbox" name="option6"> Others
+                    </label>
+                </div>
+            </div>
+        </div>
+        <DIV class="space">
+            <label for="AddCOmments"><H5>Additional Comments(anything you'd like us to know) ?</H5></label>
+                <textarea class="textarea" id="AddCOmments" name="AddCOmments"></textarea>
+        
+        </DIV>
+
+
+        <footer>
+
+            <div class="footer-col">
+                <p>+12 34 567 890 00</p>
+                <p>email_your@gmail.com</p>
+                <p>your_website.com</p>
+            </div>
+            <div class="footer-col">
+                <p>  R 32, Vikas Marg Extn</p>
+                <p> Shakarpur,Delhi-110034</p>
+                <p>India</p>
+            </div>
+            <div class="footer-col">
+                <h2>Your Signature</h2>
+                <textarea type="text" id="sign" name="sign"  ></textarea>
+            </div>
+        </footer>
+    </div>
+
+    
+    </div>
+
+    
+
+            
+</body>
+</html>
